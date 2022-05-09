@@ -1,0 +1,4 @@
+url: "https://yoururl.atlassian.net"                        # the url to your confluence
+user: "user@email.com"                                      # the email you login with
+api_token: "f4k34p170k3n"                                   # create one at https://id.atlassian.com/manage-profile/security/api-tokens
+space_id: "~2546254lhgj62435jlh6g234562fk54h6d24kth536f"    # copy from the url of the space you want to add pages to, https://yoururl.atlassian.net/wiki/spaces/~2546254lhgj62435jlh6g234562fk54h6d24kth536f/overview

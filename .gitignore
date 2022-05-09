@@ -1,3 +1,4 @@
-*.yml
+*.yaml
 *.dump
 *.sql
+*.swp
