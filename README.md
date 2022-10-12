@@ -3,7 +3,7 @@
 Tool to convert the contents of all Redmine project wikis to a mix of plain HTML and [Confluence](https://www.atlassian.com/software/confluence) XML elements, and upload all converted pages and attachments to a single Confluence space. Each Redmine project will correspond to a page in a Confluence space, and all wiki pages from the Redmine project will be subpages to that page. The page structure in Redmine will be kept the same using subpages in Confluence.
 
 ## Get the redmine database dump
-The database backups are postgresql binary dumps. Fetch a dump file from your server first, then convert it to plain text.
+The database backups are postgresql binary dumps. Fetch a dump file from your server first, then convert it to a plain text sql file that can be parsed easily.
 
 ```bash
 # download your dump file from the servers backup directory
@@ -11,6 +11,9 @@ The database backups are postgresql binary dumps. Fetch a dump file from your se
 # convert the dump file to plain sql
 docker run -it -v $(pwd):/hostfs postgres:14.1-alpine pg_restore -f /hostfs/databasedump.sql /hostfs/database-20220505-0315.dump
 ```
+
+## Download the Redmine attachment folder
+To be able to upload attachments you must have all the attachment files. Look for the folder `files` in the root of your Redmine installation and download it.
 
 ## Get your Confluence settings
 
