@@ -1,5 +1,7 @@
 # redmine2confluence
 
+Tool to convert the contents of all Redmine project wikis to a mix of plain HTML and [Confluence](https://www.atlassian.com/software/confluence) XML elements, and upload all converted pages and attachments to a single Confluence space. Each Redmine project will correspond to a page in a Confluence space, and all wiki pages from the Redmine project will be subpages to that page. The page structure in Redmine will be kept the same using subpages in Confluence.
+
 ## Get the redmine database dump
 The database backups are postgresql binary dumps. Fetch a dump file from your server first, then convert it to plain text.
 
