@@ -1,4 +1,5 @@
 *.yaml
 *.dump
 *.sql
-*.swp
+*.sw*
+*.tar.gz
