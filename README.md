@@ -23,14 +23,10 @@ Write down the confluence settings in config.yaml
 
 ## Run the script
 
-Run the `redmine2confluence.py` script and give it the redmine database plain sql file and confluence yaml file as input arguments.
+Run the `redmine2confluence.py` script and give it the redmine database plain sql file, confluence config yaml file, and redmine attachments folder root as input arguments. A name of a redmine project can be given as a 4th argument to limit the conversion to a single project's wiki.
 
 ```bash
-python3 redmine2confluence.py <redmine sql file> <confluence config file>
+python3 redmine2confluence.py <redmine database dump file> <atlassian config yaml file> <redmine attachments folder root> [<redmine project name to limit conversion to>]
 ```
 
 Sit back and enjoy.
-
-(soon, not finished yet!)
-
-
